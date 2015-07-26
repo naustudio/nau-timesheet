@@ -19,7 +19,7 @@ var Navbar = React.createClass({
           style: { marginRight: '30px' },
           className: 'navbar-brand',
           to: '/'
-        }, 'NAU-TIMESHEET')}
+        }, 'TIMESHEET')}
 
         <ul className="nav navbar-nav">
           <li className={this._checkUri('')}>
