@@ -3,7 +3,7 @@
 This application based of this repo [react-flux-router-boilerplate](https://github.com/apzentral/react-flux-router-boilerplate), you can check it out for more information.
 
 
-### Directory Layout
+#### Directory Layout
 
 ```
 .
@@ -26,28 +26,26 @@ This application based of this repo [react-flux-router-boilerplate](https://gith
 └── package.json                # The list of 3rd party libraries and utilities
 ```
 
-### Getting Started
+#### Getting Started
 
 1. Clone or fork this project.
 2. Then run this command `$ npm install`
 3. Run `$ gulp`
 
-### How to Build
+#### Gulp commands
 
 ```shell
-$ gulp build                    # `gulp build --watch`, or `gulp build --release`
+$ gulp                          # run app
 ```
-
-### How to Run
 
 ```shell
-$ gulp                          # or, `gulp --release`
+$ gulp build                    # build app
 ```
 
-### Debug
+```shell
+$ gulp --verbose                # run app as debug environment
+```
 
-Simply add `--verbose` when running `gulp` command
-
-### Support
+#### Support
 
 Have any feedback, feature request or anything? Please let me know.
