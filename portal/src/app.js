@@ -43,18 +43,19 @@ function render(uri, page) {
 var router = new Router({
   // Main Route
   '/': function() {
-    var page = React.createFactory(require('./pages/Index'));
+    var page = React.createFactory(require('./pages/plan'));
     render(router.getRoute(), page);
   },
-  '/libraries': function() {
-    var page = React.createFactory(require('./pages/Libraries'));
+  '/project': function() {
+    var page = React.createFactory(require('./pages/project'));
     render(router.getRoute(), page);
   },
-  '/todo': function() {
-    var page = React.createFactory(require('./pages/ToDo'));
+  '/report': function() {
+    var page = React.createFactory(require('./pages/report'));
     render(router.getRoute(), page);
   }
 });
+
 router.configure({
   html5history: false
 }).init('/');

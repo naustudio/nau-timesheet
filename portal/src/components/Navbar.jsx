@@ -16,27 +16,20 @@ var Navbar = React.createClass({
     return (
       <nav className="navbar navbar-inverse">
         {Link({
-          style: {
-            marginRight: '30px'
-          },
+          style: { marginRight: '30px' },
           className: 'navbar-brand',
           to: '/'
-        }, 'Welcome')}
+        }, 'NAU-TIMESHEET')}
+
         <ul className="nav navbar-nav">
           <li className={this._checkUri('')}>
-            {Link({
-              to: '/'
-            }, 'Home')}
+            {Link({to: '/'}, 'PLAN')}
           </li>
           <li className={this._checkUri('libraries')}>
-            {Link({
-              to: '/libraries'
-            }, 'Libraries')}
+            {Link({to: '/report'}, 'REPORT')}
           </li>
           <li className={this._checkUri('todo')}>
-            {Link({
-              to: '/todo'
-            }, 'To Do Application')}
+            {Link({to: '/project'}, 'PROJECTS')}
           </li>
         </ul>
       </nav>
